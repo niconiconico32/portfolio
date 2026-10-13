@@ -1,15 +1,9 @@
-import { Button } from '@/components/ui/button'
+import { Orb23 } from '@/components/orbs/orb-23'
 
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center gap-6">
-      <h1 className="font-heading text-4xl font-semibold tracking-tight">
-        Mi Portafolio
-      </h1>
-      <p className="text-muted-foreground">
-        shadcn/ui está listo. Empecemos a construir.
-      </p>
-      <Button>Hola mundo</Button>
+    <div className="flex min-h-svh items-center justify-center bg-black">
+      <Orb23 size={400} state="thinking" />
     </div>
   )
 }

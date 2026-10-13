@@ -73,9 +73,9 @@ function AboutMe() {
           </p>
         </header>
 
-        <section className="flex flex-col gap-6">
+        <section className="flex flex-col items-center gap-6">
           <h2 className={sectionLabel}>Education</h2>
-          <div className="flex flex-col gap-4">
+          <div className="flex w-full max-w-xl flex-col gap-4 text-left">
             {education.map((item) => (
               <div
                 key={item.institution}
@@ -104,18 +104,18 @@ function AboutMe() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6">
+        <section className="flex flex-col items-center gap-6">
           <h2 className={sectionLabel}>Skills</h2>
-          <dl className="flex flex-col divide-y divide-[#F5F1E8]/10 border-y border-[#F5F1E8]/10">
+          <dl className="flex w-full max-w-xl flex-col divide-y divide-[#F5F1E8]/10 border-y border-[#F5F1E8]/10">
             {skills.map((group) => (
               <div
                 key={group.specialty}
-                className="grid gap-3 py-4 sm:grid-cols-[9rem_1fr] sm:items-center"
+                className="flex flex-col items-center gap-3 py-4"
               >
                 <dt className="text-sm font-medium text-[#F5F1E8]/50">
                   {group.specialty}
                 </dt>
-                <dd className="flex flex-wrap gap-2">
+                <dd className="flex flex-wrap justify-center gap-2">
                   {group.items.map((skill) => (
                     <span
                       key={skill}

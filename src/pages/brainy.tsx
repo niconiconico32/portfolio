@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logobrainy from '@/assets/logobrainy.png'
 
 const linkClass =
   'text-[#F5F1E8] underline decoration-[#F5F1E8]/30 underline-offset-4 transition-colors hover:decoration-[#F5F1E8]'
@@ -17,6 +18,11 @@ function Brainy() {
         </Link>
 
         <header className="flex flex-col gap-4">
+          <img
+            src={logobrainy}
+            alt="Brainy"
+            className="h-24 w-auto self-start"
+          />
           <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             Brainy — An ADHD-first system for starting, not just planning
           </h1>

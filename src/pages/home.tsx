@@ -10,7 +10,7 @@ function Home() {
           Nicolas Gomez
         </h1>
         <p className="font-heading text-sm font-medium tracking-[0.3em] text-[#F5F1E8]/70 sm:text-base">
-          mobile developer
+          Product Engineer · Full-Stack & Mobile
         </p>
       </div>
 

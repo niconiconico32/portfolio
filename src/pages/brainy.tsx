@@ -90,7 +90,7 @@ function Brainy() {
             <li>
               Active development through{' '}
               <strong className="font-semibold text-[#F5F1E8]">
-                October 2026
+                March 2026
               </strong>
               , including localization, billing and onboarding updates.
             </li>

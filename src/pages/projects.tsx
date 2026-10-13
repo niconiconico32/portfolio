@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useI18n } from '@/i18n'
 
 function Projects() {
+  const { t } = useI18n()
+
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-14 bg-black px-6 text-[#F5F1E8]">
       <nav className="flex flex-col items-center gap-8">
@@ -22,7 +25,7 @@ function Projects() {
         to="/"
         className="text-sm text-[#F5F1E8]/60 underline-offset-4 hover:text-[#F5F1E8] hover:underline"
       >
-        ← Back
+        {t.common.back}
       </Link>
     </div>
   )

@@ -1,6 +1,25 @@
 import { Link } from 'react-router-dom'
 import { AsciiPiece } from '@/components/ascii/ascii-piece'
 import * as cloudSea from '@/components/ascii/pieces/cloud-sea'
+import usachLogo from '@/assets/usach.png'
+import duocLogo from '@/assets/duoc.png'
+
+const education = [
+  {
+    logo: usachLogo,
+    alt: 'Universidad de Santiago de Chile',
+    degree: 'Journalism',
+    institution: 'Universidad de Santiago de Chile',
+    dates: '2014 — 2019',
+  },
+  {
+    logo: duocLogo,
+    alt: 'Duoc UC',
+    degree: 'Computer Science',
+    institution: 'Duoc UC',
+    dates: '2023 — 2026',
+  },
+]
 
 function AboutMe() {
   return (
@@ -20,6 +39,32 @@ function AboutMe() {
           initial research and UX to payments, deployment and growth.
         </p>
       </div>
+
+      <section className="w-full max-w-2xl text-left">
+        <h2 className="font-heading text-xl font-semibold tracking-tight">
+          Education
+        </h2>
+        <div className="mt-5 flex flex-col gap-5">
+          {education.map((item) => (
+            <div key={item.institution} className="flex items-center gap-4">
+              <div className="flex h-16 w-28 shrink-0 items-center justify-center rounded-md bg-[#F5F1E8] p-2">
+                <img
+                  src={item.logo}
+                  alt={item.alt}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="font-heading text-base font-semibold">
+                  {item.degree}
+                </h3>
+                <p className="text-sm text-[#F5F1E8]/80">{item.institution}</p>
+                <p className="text-sm text-[#F5F1E8]/50">{item.dates}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <Link
         to="/"

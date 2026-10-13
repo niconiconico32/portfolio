@@ -2,29 +2,13 @@ import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Orb23 } from '@/components/orbs/orb-23'
 
-const fonts = [
-  { name: 'Pixelify Sans', className: 'font-pixelify' },
-  { name: 'Silkscreen', className: 'font-silkscreen' },
-  { name: 'VT323', className: 'font-vt323' },
-  { name: 'Handjet', className: 'font-handjet' },
-]
-
 function Home() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-10 bg-black text-[#F5F1E8]">
-      <div className="flex flex-col items-center gap-8 text-center">
-        {fonts.map((f) => (
-          <div key={f.name} className="flex flex-col items-center gap-1">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-[#F5F1E8]/40">
-              {f.name}
-            </span>
-            <h1
-              className={`${f.className} text-4xl font-semibold tracking-tight sm:text-5xl`}
-            >
-              Nicolas Gomez
-            </h1>
-          </div>
-        ))}
+      <div className="flex flex-col items-center gap-3 text-center">
+        <h1 className="font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
+          Nicolas Gomez
+        </h1>
         <p className="font-heading text-sm font-medium tracking-[0.3em] text-[#F5F1E8]/70 sm:text-base">
           Product Engineer
         </p>

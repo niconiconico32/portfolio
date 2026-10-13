@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
+import { AsciiPiece } from '@/components/ascii/ascii-piece'
+import * as cloudSea from '@/components/ascii/pieces/cloud-sea'
 
 function AboutMe() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-10 bg-black px-6 text-[#F5F1E8]">
       <div className="flex max-w-2xl flex-col items-center gap-5 text-center">
+        <AsciiPiece piece={cloudSea} className="w-full" />
         <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           Product Engineer · Full-Stack &amp; Mobile
         </h1>
